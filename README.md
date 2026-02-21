@@ -3,18 +3,6 @@
 This repository contains reusable workflows for GitHub.
 
 
-## pypi-release
-
-Build a Python project and releases it to PyPI.
-
-```yaml
-jobs:
-  test:
-    name: Release
-    uses: albertodonato/github-workflows/.github/workflows/pypi-release.yaml@main
-```
-
-
 ## run-tox
 
 Run a `tox` environment.
