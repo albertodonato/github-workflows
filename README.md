@@ -12,8 +12,6 @@ jobs:
   test:
     name: Release
     uses: albertodonato/github-workflows/.github/workflows/pypi-release.yaml@main
-    with:
-      python-version: "3.14"
 ```
 
 
