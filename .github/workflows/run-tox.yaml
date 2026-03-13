@@ -30,7 +30,7 @@ jobs:
 
       - name: Install tox
         run: |
-          pip install tox
+          pip install tox tox-uv
 
       - name: Run environment
         run: |
