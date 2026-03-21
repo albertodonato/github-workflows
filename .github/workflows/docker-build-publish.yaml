@@ -72,7 +72,7 @@ jobs:
         with:
           images: |
             ${{ env.REGISTRY }}/${{ inputs.image-name }}
-            ${{ env.IS_TAG == 'true' && format('{0}/{1}', inputs.dockerhub-username, inputs.image-name) || '' }}
+            ${{ env.IS_TAG == 'true' && format('{0}/{1}', inputs.dockerhub-username, inputs.dockerhub-image-name) || '' }}
           tags: |
             type=ref,event=branch,suffix=${{ env.SUFFIX }}
             type=ref,event=pr,prefix=pr-,suffix=${{ env.SUFFIX }}
