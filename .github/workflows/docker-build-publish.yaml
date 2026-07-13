@@ -29,9 +29,9 @@ on:
         required: false
       latest:
         type: bool
-        description: Wether to tag the image as latest
+        description: Whether to tag the image as latest
         default: true
-          
+
     secrets:
       DOCKERHUB_TOKEN:
         description: Token for Docker Hub
