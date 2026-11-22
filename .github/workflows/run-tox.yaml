@@ -32,8 +32,9 @@ jobs:
         env:
           PACKAGES: ${{ inputs.extra-packages }}
         run: |
+          read -ra packages <<< "$PACKAGES"
           sudo apt-get update
-          sudo DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install $PACKAGES
+          sudo DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install "${packages[@]}"
 
       - name: Set up Python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
