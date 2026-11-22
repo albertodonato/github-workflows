@@ -28,7 +28,7 @@ on:
         description: Image suffix
         required: false
       latest:
-        type: bool
+        type: boolean
         description: Whether to tag the image as latest
         default: true
 
